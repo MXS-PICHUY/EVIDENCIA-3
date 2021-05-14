@@ -1,0 +1,57 @@
+# EJERCICIO 1
+
+import csv
+
+myData = [["AKA del MC","LIGA","POSICION","PAIS"],
+          ['PAPO MC','FMS ARGENTINA','2DO PUESTO','ARGENTINA'],
+          ['RC','FMS MEXICO','3R LUGAR','MEXICO'],
+          ['METALINGUISTICA','RED BULL','OCTAVOS','CHILE'],
+          ['SKILL','FMS PERU','4TO PUESTO','PERU'],
+          ['LANCER LIRICAL','CLUB DE LA PELEA','FINAL','VENEZUELA']]
+myFile = open('FREESTYLER´S.csv','w')
+with myFile:
+    writer = csv.writer(myFile)
+    writer.writerows(myData)
+    
+print("TU LISTA ESTA LISA :V")
+
+#EJERCICIO 2
+
+import csv
+
+myData = [["nombre_uno","segundo_nombre","grade"],
+          ['pepe','alejandro','A'],
+          ['tom','carrionn','B']]
+myFile = open('example.csv','w')
+with myFile:
+    writer = csv.writer(myFile)
+    writer.writerows(myData)
+    
+print("archivo completo")
+
+#EJERCICIO 3
+
+import json
+
+x = {
+    "name":"john",
+    "age": 30,
+    "city":"new york"
+}
+
+y = json.dumps(x)
+print(y)
+print(x)
+
+#EJERCICIO 4
+
+import json
+aList = [41, 58, 63]
+jsonStr = json.dumps(aList)
+print(jsonStr) 
+
+#EJERCICIO 5
+import json
+aList = [[{'a':1, 'b':2}], [{'c':3, 'd':4}]]
+jsonStr = json.dumps(aList)
+print(jsonStr)
